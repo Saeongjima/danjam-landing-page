@@ -43,10 +43,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Wanted Sans', sans-serif; /* 폰트 패밀리 설정 */
   }
   
-  .text-group {
+  .text-group-row {
     display: flex;
     width: 80%;
     padding-top: 60px;
@@ -55,7 +55,7 @@
     align-items: flex-end; /* 텍스트의 세로 정렬을 하단으로 */
   }
   
-  .text-group p:first-child {
+  .text-group-row p:first-child {
     font-size: 18px; /* 상단 텍스트 크기 */
     color: #e7e7e7;
     text-align: left;
@@ -63,7 +63,7 @@
     height: 100%;
   }
   
-  .text-group p:last-child {
+  .text-group-row p:last-child {
     font-size: 18px; /* 하단 저작권 텍스트 크기 */
     color: #e7e7e7;
     text-align: right;
@@ -74,18 +74,77 @@
   .table-of-contents img {
     width: 102vw; /* 이미지가 부모의 너비에 맞도록 설정 */
     height: auto; /* 이미지 비율 유지 */
-    object-fit: cover; /* 이미지 비율을 유지하며 영역을 채움 */
+    object-fit: fit; /* 이미지 비율을 유지하며 영역을 채움 */
     margin: 0; /* 여백 제거 */
     padding: 0; /* 여백 제거 */
     position: relative; /* 하단에 딱 맞게 위치 */
     bottom: 0; /* 하단에 딱 맞게 */
   }
   
+  .overview {
+    position: relative;
+    background-color: #282828;
+    height: 100vh;
+    display: flex; /* 플렉스 박스 레이아웃 사용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: flex-start; /* 수평 방향에서 왼쪽 정렬 */
+  }
+  
+  /* 배경 이미지에 투명도 적용 */
+  .overview::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/overview-background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0; /* 배경에 위치 */
+  }
+  
+  /* 섹션 안의 내용이 이미지 위에 배치되도록 설정 */
+  .overview * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* 텍스트를 포함하는 컨테이너 설정 */
+  .text-group-column {
+    width: 50%; /* 텍스트 컨테이너 너비 설정 */
+    display: flex;
+    flex-direction: column; /* 수직으로 텍스트 정렬 */
+    justify-content: center; /* 수직 가운데 정렬 */
+    align-items: flex-start; /* 텍스트를 수평 방향에서 왼쪽으로 정렬 */
+    padding-left: 150px; /* 부모의 왼쪽에서 약간 떨어지도록 패딩 추가 */
+  }
+  
+  .text-group-column h3 {
+    font-size: 24px; /* 작은 제목 크기 */
+    color: #fff; /* 하얀색 텍스트 */
+    margin-bottom: 10px; /* 아래쪽 여백 */
+  }
+  
+  .text-group-column h2 {
+    font-size: 36px; /* 큰 제목 크기 */
+    color: #bbffba; /* 연두색 제목 */
+    margin-bottom: 20px; /* 아래쪽 여백 */
+  }
+  
+  .text-group-column p {
+    font-size: 18px; /* 본문 텍스트 크기 */
+    line-height: 1.8; /* 줄 간격 */
+    margin-bottom: 20px; /* 아래쪽 여백 */
+    color: #d1d1d1; /* 본문 텍스트 색상 (밝은 회색) */
+  }
   
   
   
   
-  .overview { background-color: #fce4ec; }
+  
+  
+  
+  
   .background01 { background-color: #e8f5e9; }
   .background02 { background-color: #fff3e0; }
   .background03 { background-color: #ede7f6; }
