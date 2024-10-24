@@ -40,9 +40,9 @@ section {
 
 /* 제목 스타일 */
 .box_one_column h3 {
-    font-size: 24px; /* 작은 제목 크기 */
-    color: #fff; /* 하얀색 텍스트 */
-    margin-bottom: 10px; /* 아래쪽 여백 */
+  font-size: 24px; /* 작은 제목 크기 */
+  color: #fff; /* 하얀색 텍스트 */
+  margin-bottom: 10px; /* 아래쪽 여백 */
 }
 
 /* 이미지가 들어갈 곳 */
@@ -60,7 +60,6 @@ section {
 .box_one_column a:hover {
   text-decoration: underline; /* 링크에 마우스를 올렸을 때 밑줄 표시 */
 }
-
 
 h2 {
   font-size: 24px;
@@ -164,7 +163,7 @@ strong {
 
 .text-group-column h3 {
   font-size: 24px; /* 작은 제목 크기 */
-  color: #fff; /* 하얀색 텍스트 */
+  color: #fff; /* 연두색 제목 */
   margin-bottom: 10px; /* 아래쪽 여백 */
 }
 
@@ -214,8 +213,97 @@ strong {
   z-index: 1;
 }
 
+/* 배경 스타일 */
 .background02 {
-  background-color: #fff3e0;
+  background-color: #282828;
+  height: 100vh;
+  padding: 40px;
+  color: #ffffff;
+  flex-direction: column; /* 세로로 쌓임 (column) */
+}
+
+/* 상단 텍스트 섹션 중앙 정렬 */
+.text-section {
+  text-align: center; /* 모든 텍스트를 가로축에서 중앙 정렬 */
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* 세로로 쌓이도록 설정 */
+  align-items: center; /* 수평 방향에서 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 (필요시) */
+  margin-bottom: 40px;
+}
+
+/* 텍스트 스타일은 그대로 유지 */
+.text-section h2 {
+  font-size: 36px; /* 큰 제목 크기 */
+  color: #bbffba; /* 연두색 제목 */
+  margin-bottom: 20px; /* 아래쪽 여백 */
+}
+
+.text-section h3 {
+  font-size: 24px; /* 작은 제목 크기 */
+  color: #fff; /* 연두색 제목 */
+  margin-bottom: 10px; /* 아래쪽 여백 */
+}
+
+.text-section p {
+  font-size: 18px;
+  color: #d1d1d1;
+  margin-bottom: 40px;
+  max-width: 800px; /* 긴 텍스트의 경우 최대 너비 제한 */
+}
+
+/* 그래프 섹션 레이아웃 */
+.graph-section {
+  display: flex;
+  justify-content: space-between; /* 좌우로 그래프 배치 */
+  align-items: flex-start; /* 모든 요소를 상단에 맞춰 정렬 */
+  gap: 40px; /* 그래프 간 간격 */
+  width: 90%; /* 전체 너비 */
+}
+
+/* 좌우 그래프 스타일 */
+.graph-left,
+.graph-right {
+  width: 48%; /* 각 그래프가 45% 너비 */
+}
+
+.graph-left img{
+  margin-left: 30px;
+  width: 80%;
+  height: auto;
+}
+
+.graph-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* 화살표 이미지 스타일 */
+.graph-arrow {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-arrow img {
+  width: 50px; /* 화살표 이미지 크기 조정 */
+  height: auto; /* 비율 유지 */
+}
+
+.graph-left h4,
+.graph-right h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff; /* 흰색 질문 */
+}
+
+.graph-left p,
+.graph-right p {
+  font-size: 14px;
+  color: #a0a0a0; /* 회색 설명 텍스트 */
+  margin-bottom: 20px;
 }
 .background03 {
   background-color: #ede7f6;
