@@ -4,7 +4,8 @@
 /* 2. 공통 스타일 */
 
 /* 전체적인 폰트, 마진, 패딩, 박스 모델 설정 */
-body, html {
+body,
+html {
   font-family: "Wanted Sans", sans-serif; /* 폰트 패밀리 설정 */
   margin: 0;
   padding: 0;
@@ -66,6 +67,12 @@ strong {
   font-weight: bold;
   color: #ffffff; /* 흰색 */
 }
+
+  /* 이미지 중앙 정렬 */
+  article {
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+  }
 
 /* 부모 컨테이너 설정: 좌우 배치 */
 .box_two_group {
@@ -132,7 +139,8 @@ strong {
 }
 
 /* 좌우 그래프 스타일 */
-.graph-left, .graph-right {
+.graph-left,
+.graph-right {
   width: 48%; /* 각 그래프가 48% 너비 */
 }
 
@@ -160,13 +168,15 @@ strong {
   height: auto;
 }
 
-.graph-left h4, .graph-right h4 {
+.graph-left h4,
+.graph-right h4 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #ffffff; /* 흰색 질문 텍스트 */
 }
 
-.graph-left p, .graph-right p {
+.graph-left p,
+.graph-right p {
   font-size: 14px;
   color: #a0a0a0; /* 회색 설명 텍스트 */
   margin-bottom: 20px;
@@ -301,19 +311,47 @@ strong {
   background-size: contain;
   background-position: top;
   background-repeat: no-repeat;
-  
+
   z-index: 1;
 }
 
 /* 색상 섹션 스타일 */
-.problem { background-color: #f3e5f5; }
-.project-goals { background-color: #fbe9e7; }
-.brand-concept { background-color: #e0f2f1; }
-.character { background-color: #f1f8e9; }
-.design-system { background-color: #ffebee; }
-.components { background-color: #f9fbe7; }
-.information-architecture { background-color: #e8f5e9; }
-.main-image { background-color: #fffde7; }
-.core-feature1 { background-color: #f3e5f5; }
-.core-feature2 { background-color: #e8eaf6; }
-.team-members { background-color: #f9fbe7; }
+.problem {
+  background-color: #282828;
+  height: 150vh;
+  padding: 40px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* 세로 정렬 */
+}
+.project-goals {
+  background-color: #fbe9e7;
+}
+.brand-concept {
+  background-color: #e0f2f1;
+}
+.character {
+  background-color: #f1f8e9;
+}
+.design-system {
+  background-color: #ffebee;
+}
+.components {
+  background-color: #f9fbe7;
+}
+.information-architecture {
+  background-color: #e8f5e9;
+}
+.main-image {
+  background-color: #fffde7;
+}
+.core-feature1 {
+  background-color: #f3e5f5;
+}
+.core-feature2 {
+  background-color: #e8eaf6;
+}
+.team-members {
+  background-color: #f9fbe7;
+}
