@@ -311,7 +311,7 @@ article {
   height: 60%;
   background-image: url(../assets/images/background03-background-img.png);
   background-size: 50%; /* 이미지 크기를 50%로 설정 */
-  background-position: top right; /* 상단 오른쪽에 배치 */;
+  background-position: top right; /* 상단 오른쪽에 배치 */
   background-repeat: no-repeat;
 
   z-index: 1;
@@ -338,7 +338,6 @@ article {
   position: relative;
   z-index: 1;
 }
-
 
 .project-goals::before {
   content: "";
@@ -379,10 +378,7 @@ article {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
 }
-
-
 
 .character {
   background-color: #282828;
@@ -397,9 +393,84 @@ article {
   padding-top: 20px; /* 상단 여백 */
 }
 
-
 .design-system {
-  background-color: #ffebee;
+  background: #282828;
+  height: 200vh;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+.design-system-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.column {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center top;
+  color: white; /* 텍스트 색상 */
+}
+.wanted-sans2 {
+  color: var(--black950-f0f0f0, #f0f0f0);
+  text-align: left;
+  font-family: "WantedSans-Bold", sans-serif;
+  font-size: 4.5rem;
+  line-height: 150%;
+  font-weight: 700;
+}
+.bold-semibold-medium-regular {
+  color: var(--black700-c9c9c9, #c9c9c9);
+  text-align: left;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 400;
+}
+._24-20-18-16-14-12 {
+  color: var(--black700-c9c9c9, #c9c9c9);
+  text-align: left;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-size: 24.704130172729492px;
+  line-height: 150%;
+  font-weight: 400;
+}
+.abcdefghijklmnop-qrstuvwxyz {
+  color: var(--black950-f0f0f0, #f0f0f0);
+  text-align: left;
+  font-family: "WantedSans-Regular", sans-serif;
+  font-size: 39.187103271484375px;
+  line-height: 110%;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+.abcdefghijklmnop-qrstuvwxyz2 {
+  color: var(--black950-f0f0f0, #f0f0f0);
+  text-align: left;
+  font-family: "WantedSans-Regular", sans-serif;
+  font-size: 39.187103271484375px;
+  line-height: 110%;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+.가나다라마바사아자차카타파하_1234567890 {
+  color: var(--black950-f0f0f0, #f0f0f0);
+  text-align: left;
+  font-family: "WantedSans-Regular", sans-serif;
+  font-size: 39.187103271484375px;
+  line-height: 110%;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+.main-color {
+  color: var(--black950-f0f0f0, #f0f0f0);
+  text-align: left;
+  font-family: var(--title-large-16-semibold-font-family, "WantedSans-SemiBold", sans-serif);
+  font-size: var(--title-large-16-semibold-font-size, 16px);
+  line-height: var(--title-large-16-semibold-line-height, 150%);
+  font-weight: var(--title-large-16-semibold-font-weight, 600);
 }
 .components {
   background-color: #f9fbe7;
